@@ -1,162 +1,292 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="css/hover.min.css" media="screen,projection">
-    <link type="text/css" rel="stylesheet" href="css/estilo.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="css/animate.css" media="screen,projection" />
-    <title>T.I. JOBS 4 YOU</title>
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css" >
+    <link rel="stylesheet" href="css/hover-min.css" >
 
+</head>
 <body>
-    <nav class=" transparent">
-        <div class="nav-wrapper container">
-            <a href="#inicial" class="brand-logo black-text scroll">T.I</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li>
-                    <a href="#mandarCV" class="black-text scroll">mandar c.v</a>
+    <!-- inicio do menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed;width: 100%;z-index: 100">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#oqueessh">O que é SSH</a>
                 </li>
-                <li>
-                    <a href="#conversar" class="black-text scroll">conversar</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#praqueserve">Para que serve</a>
                 </li>
-                <li>
-                    <a href="#modal1" class="waves-effect waves-light btn blue darken-1 modal-trigger">entrar</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#comofunciona">Como funciona</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#criptografia">Técnicas de criptografia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#putty">PuTTY</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div id="index-banner" class="parallax-container">
-        <div class="section no-pad-bot">
-            <div class="container">
-                <br>
-                <br>
-                <h1 class="header center blue-text text-darken-1">T.I. JOBS FOR YOU</h1>
-                <div class="row center">
-                    <h5 class="header col s12 light">O melhor site de procura de empregos na área de T.I.</h5>
-                </div>
-                <div class="row center">
-                    <a href="#modal1" id="download-button" class="btn-large waves-effect waves-light blue darken-1 modal-trigger">Cadastro online</a>
-                </div>
-                <br>
-                <br>
-
-            </div>
-        </div>
-        <div class="parallax">
-            <img src="https://images.pexels.com/photos/326424/pexels-photo-326424.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+    <!-- fim do menu -->
+    <!-- parte de apresentação -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1>SSH</h1>
         </div>
     </div>
-
-
+    <!-- fim da parte de apresentação -->
+    <!-- explicação de o que é SSH -->
     <div class="container">
-        <div class="section">
-
-            <!--   Icon Section   -->
+        <br><br>
+        <div id="oqueessh">
+            <h1 class="text-center font-weight-bold laranja"><span class="hvr-grow">O QUE É SSH </span> <span class="roxo hvr-buzz">?</span></h1>
+            <br>
+            <p class="text-center">
+                SSH ou Cápsula de Segurança é um protocolo de administração remota que permite aos usuários controlar e modificar seus servidores pela 
+                Internet. O serviço foi criado como uma substituição segura para o Telnet não criptografado que usa técnicas criptográficas para garantir 
+                que todas as comunicações do servidor remoto aconteçam de forma criptografada. Ele fornece um mecanismo para autenticar um usuário remoto, 
+                transferindo entradas do cliente para o servidor de hospedagem e retransmitindo a saída para o cliente.
+            </p>    
+        </div>
+        <!-- fim da explicação de o que é SSH -->
+        <br>
+        <hr style="width: 80%">    
+        <br>
+        <h1 class="text-center font-weight-bold laranja"><span class="hvr-grow">E O TELNET</span> <span class="roxo hvr-buzz">?</span></h1>
+        <br>
+        <p class="text-center">
+            Telnet é um protocolo cliente-servidor usado para permitir a comunicação entre computadores ligados numa rede (ex:  rede local / LAN / Internet), baseado em TCP.
+        </p>
+        <p class="text-center">
+            Telnet é um protocolo utilizado na comunicação entre computadores remotamente (à distância). Vem sendo usado gradualmente substituído pelo SSH, cujo conteúdo é criptografado antes de ser enviado.        
+        </p> 
+        <br>
+        <hr style="width: 80%">    
+        <br>
+        <!-- explicação para o que serve SSH -->
+        <div class="row" id="praqueserve">
+            <div class="col-sm">
+                <br><br>
+                <h1 class="text-center font-weight-bold laranja"><span class="hvr-grow">PARA QUE SERVE</span> <span class="roxo hvr-buzz">?</span></h1>
+                <br>
+                <p>
+                    &emsp;&emsp;O acesso SSH é usado por administradores de rede para gerenciar sistemas e aplicativos de forma remota. Ou seja, 
+                    longe do computador ou servidor por onde se está acessando esses sistemas virtuais.
+                </p>
+                <p>
+                    &emsp;&emsp;Com o acesso SSH, o usuário pode fazer login em um outro computador por uma rede protegida por criptografia. 
+                    Desse jeito, ele pode executar comandos, mover e editar arquivos de um local para outro sem riscos de interceptação por 
+                    agentes maliciosos.
+                </p>
+                <p>
+                    &emsp;&emsp;Essa tecnologia oferece uma interface baseada em texto para criar o acesso Shell remoto. Essa interface é 
+                    o próprio terminal Shell, que executa os comandos digitados e faz a ponte entre a máquina do usuário e o servidor remoto.
+                </p>
+            </div>
+            <div class="col-sm">
+                <br><br><span class="hvr-buzz-out"><img src="img/serve.svg" alt="" height="480" width="480"/></span>
+            </div> <!-- imagem ilustrando a situação -->
+        </div>
+        <!-- fim da explicação -->
+        <!-- explicação como funciona SSH -->
+        <br>
+        <div class="row" id="comofunciona">
+            <br><br>
+            <hr style="width: 80%">  
+            <br>
+            <div class="col-sm"><br><br><span class="hvr-pop"><img src="img/func.svg" alt="" height="300" width="300"></span></div> <!-- imagem ilustrando a situação -->
+            <div class="col-sm">
+                <br>
+                <h1 class="text-center font-weight-bold laranja"><span class="hvr-grow">COMO FUNCIONA</span> <span class="roxo hvr-buzz">?</span></h1>
+                <br>
+                <p>
+                    &emsp;&emsp;Se você estiver usando Linux ou Mac, então usar SSH é muito simples. Se você usar o Windows, 
+                    você precisará utilizar um clienteSSH para abrir conexões desse tipo. O cliente SSH mais popular é o PuTTY, 
+                    que você pode aprender mais sobre aqui.
+                </p>
+                <p>&emsp;&emsp;Para usuários de Mac e Linux, dirija-se ao seu programa de terminal e siga o procedimento abaixo:</p>
+                <p><span  class="text-cente font-weight-bold roxo">ssh {user}@{host}</span></p>          
+            </div>
             <div class="row">
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center blue-text">
-                            <i class="material-icons">flash_on</i>
-                        </h2>
-                        <h5 class="center">Agilidade</h5>
-
-                        <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat.
-                            Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros.
-                            Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere
-                            et pretium eget, bibendum sollicitudin lacus.</p>
-                    </div>
-                </div>
-
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center blue-text">
-                            <i class="material-icons">group</i>
-                        </h2>
-                        <h5 class="center">Contatos</h5>
-
-                        <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat.
-                            Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros.
-                            Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere
-                            et pretium eget, bibendum sollicitudin lacus.</p>
-                    </div>
-                </div>
-
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center blue-text">
-                            <i class="material-icons">access_time</i>
-                        </h2>
-                        <h5 class="center">Quando quiser</h5>
-
-                        <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat.
-                            Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros.
-                            Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere
-                            et pretium eget, bibendum sollicitudin lacus.</p>
-                    </div>
+                <div class="col-sm">
+                    <p class="text-center">
+                        O comando da tecla SSH instrui o sistema que deseja abrir uma Conexão de Shell segura criptografada.
+                        O {User} representa a conta à qual você deseja acessar. Por exemplo, você pode querer acessar o usuário raiz, 
+                        que é basicamente sinônimo, para o administrador do sistema, com direitos completos para modificar qualquer 
+                        coisa no sistema. O {Anfitrião} refere-se ao computador ao qual você deseja acessar. Este pode ser um endereço 
+                        IP (por exemplo, 244.235.23.19) ou, um nome de domínio (por exemplo, www.xyzdomain.com). 
+                        Quando você pressionar enter, você será solicitado a inserir a senha da conta solicitada. 
+                    </p>
                 </div>
             </div>
-
         </div>
-    </div>
-
-
-    <div class="parallax-container valign-wrapper">
-        <div class="parallax">
-            <img src="https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="section">
-
+        <br>
+        <!-- fim da explicação -->
+        <!-- tecnicas diferentes para criptografia -->
+        <div id="criptografia">
+            <br>
+            <hr style="width: 80%">    
+            <br>
+            <h1 class="text-center font-weight-bold laranja"><span class="hvr-grow">TECNICAS DE CRIPTOGRAFIA</span> <span class="roxo hvr-buzz"> !</span></h1>
+            <br>
+            <p class="text-center">
+                A vantagem significativa oferecida pelo SSH sobre seu antecessor está no uso da criptografia para transmitir de forma segura, 
+                uma informação entre o cliente e o servidor de hospedagem. O Host se refere ao servidor remoto que você está tentando acessar, 
+                enquanto o cliente é o computador que você está usando para acessar o servidor.
+            </p>
+            <p class="text-center">
+                Há três tecnologias de criptografia usadas pelo SSH:
+            </p>
+            <br><br>
             <div class="row">
-                <div class="col s12 center">
-                    <h3>
-                        <i class="mdi-content-send brown-text"></i>
-                    </h3>
-                    <h4>Fale Conosco</h4>
-                    <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam
-                        pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros
-                        justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget,
-                        bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla
-                        imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam
-                        eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et
-                        ultrices posuere cubilia Curae;</p>
+                <div class="col-sm">
+                    <p class="text-center"><span class="hvr-wobble-to-bottom-right"><img src="img/simetrica.svg" alt="" height="180" width="180"></span></p><br>
+                    <h3 class="text-center roxo font-weight-bold"><span class="hvr-bounce-in">CRIPTOGRAFIA SIMÉTRICA</span></h3><br>
+                    <p class="text-center">
+                        É a forma em que a criptografia utiliza uma chave secreta para codificar e decodificar  uma mensagem do cliente e do servidor. 
+                        De forma efetiva, qualquer mensagem pode ser decodificada, assim como, ser transferida.
+                    </p>
+                </div>
+                <div class="col-sm">
+                    <p class="text-center"><span class="hvr-wobble-vertical"><img src="img/assimetrica.svg" alt="" height="180" width="180"></span></p><br>
+                    <h3 class="text-center roxo font-weight-bold"><span class="hvr-bounce-in">CRIPTOGRAFIA ASSIMÉTRICA</span></h3><br>
+                    <p class="text-center">
+                        Ao contrário da criptografia simétrica, a criptografia assimétrica usa duas chaves separadas para criptografia e 
+                        descriptografia. Essas duas chaves são conhecidas como chave-pública e chave-privada. Juntas, as chaves são conhecidas 
+                        como pública-privada e formam um par de chaves.
+                    </p>
+                </div>
+                <div class="col-sm">
+                    <p class="text-center"><span class="hvr-wobble-to-top-right"><img src="img/hashing.svg" alt="" height="180" width="180"></span></p><br>
+                    <h3 class="text-center roxo font-weight-bold"><span class="hvr-bounce-in">HASHING</span></h3><br>
+                    <p class="text-center">
+                        One-way hashing é mais uma forma de criptografia usada em conexões seguras de Shell.  
+                        As funções do one-way-hash diferem das duas formas de criptografia acima mencionadas, 
+                        no sentido de que elas nunca devem ser descriptografadas. Eles geram um valor exclusivo, 
+                        um sentido único de comprimento fixo para cada entrada que não mostra nenhuma tendência 
+                        clara que possa ser explorada. Isso torna praticamente impossível de ser feita a reversão.
+                    </p>
                 </div>
             </div>
-
-        </div>
-    </div>
-
-    <div id="modal1" class="modal center white">
-        <div class="modal-content container">
-            <form class="col">
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="txtEmail" type="email" class="validate">
-                        <label for="txtEmail" class="none">Email</label>
-                    </div>
-                    <div class="input-field col s12">
-                        <input id="txtSenha" type="password" class="validate">
-                        <label for="txtSenha" class="none">Senha</label>
-                    </div>
-                </div>
-                <a class="btn waves-effect waves-light blue darken-1" href="view/usuario.html" type="submit" name="action">entre </a>
-            </form>
+       </div>
+       <div id="putty">
+            <br>
+            <hr style="width: 80%">    
+            <br>
+            <h1 class="text-center font-weight-bold"><span class="hvr-grow">PuTTY</span></h1>
+            <br>
+            <p class="text-center">
+                link da organização// download : <a href="https://www.putty.org/" class="text-center font-weight-bold roxo" > aqui !</a>
+            </p>
+            <p class="text-center">Caso esteja utilizando sistema Unix :</p>
+            <p class="text-center">
+                <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#exampleModal" style="background-color: #6a1b9a; border: 0">
+                    lista de comandos unix
+                </button>
+            </p>
             <br>
             <br>
-        </div>
+       </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p> <span class="roxo font-weight-bold">/</span> (refere-se ao diretório raiz no servidor)</p>
+                        <p> <span class="roxo font-weight-bold">./</span>(refere-se ao diretório em que você se encontra)</p>
+                        <p> <span class="roxo font-weight-bold">../</span> (refere-se ao diretório pai do que você se encontra)</p>
+                        <br>    
+                        <p> <span class="roxo font-weight-bold">pwd</span> (mostra qual é o diretório em que você se encontra -- dá o caminho completo)</p>
+                        <br> 
+                        <p> <span class="roxo font-weight-bold">ls</span> (lista todos os arquivos do seu diretório atual)</p>
+                        <p> <span class="roxo font-weight-bold">ls -al</span> (lista todos os arquivos + informações)</p>
+                        <p> <span class="roxo font-weight-bold">ls -alR</span> (lista todos os arquivos + informações em todos os subdiretórios)</p>
+                        <p> <span class="roxo font-weight-bold">ls -alR | more</span> (lista todos os arquivos + informações em todos os subdiretórios, criando uma pausa)</p>
+                        <p> <span class="roxo font-weight-bold">ls -alR > resultado.txt</span> (lista todos os arquivos + informações em todos os subdiretórios, mas envia todas as informações para um arquivo ao invés de mostrar na tela)</p>
+                        <p> <span class="roxo font-weight-bold">ls *.html</span> (lista todos os arquivos que terminam com .html)</p>
+                        <p> <span class="roxo font-weight-bold">ls -al home/usr/guto/</span> (lista todos os arquivos + informações de /home/usr/guto)</p>
+                        <br>      
+                        <p> <span class="roxo font-weight-bold">cd</span> (muda para um novo diretório)</p>
+                        <p> <span class="roxo font-weight-bold">cd imagens</span> (muda para o diretório imagens)</p>
+                        <p> <span class="roxo font-weight-bold">cd /</span> (muda para o diretório raiz)</p>
+                        <p> <span class="roxo font-weight-bold">cd /home/usr/imagens</span> (muda para o diretório /home/usr/imagens)</p>
+                        <p> <span class="roxo font-weight-bold">cd ..</span> (volta um diretório)</p>
+                        <br>
+                        <br> 
+                        <p>Criando, movendo, copiando e apagando diretórios</p>
+                        <br>
+                        <p> <span class="roxo font-weight-bold">mkdir</span> [nomedodiretório] (cria um novo diretório)</p>
+                        <br>
+                        <p> <span class="roxo font-weight-bold">ls -d */</span> (lista todos os subdiretórios dentro do diretório atual</p>
+                        <br>
+                        <p> <span class="roxo font-weight-bold">cp -r</span> [nomedodiretório] [novo nomedediretório] (copia um diretório e todos os seus arquivos/subdiretórios)</p>
+                        <br>
+                        <p> <span class="roxo font-weight-bold">rmdir</span> [nomedodiretório] (apaga um diretório se estiver vazio)</p>
+                        <p> <span class="roxo font-weight-bold">rm -r</span> [nomedodiretório] (remove um diretório e todos seus arquivos)</p>
+                        <br>
+                        <p>Pesquisando arquivos e diretórios:</p>
+                        <br>
+                        <p> <span class="roxo font-weight-bold">find / -name</span> [arquivo] <span class="roxo font-weight-bold">-print</span> (procura em todo servidor por um arquivo)</p>
+                        <p> <span class="roxo font-weight-bold">find . -name</span> [arquivo] <span class="roxo font-weight-bold">-print</span> (procura por um arquivo começando pelo diretório atual)</p>
+                        <p> <span class="roxo font-weight-bold">find / -name</span> [nomedodiretório] <span class="roxo font-weight-bold">-type d -print</span> (procure no servidor inteiro por um diretório)</p>
+                        <br>    
+                        <p>
+                            <span class="roxo font-weight-bold">locate</span> [arquivo] (procura em todo servidor por um arquivo em um banco de dados com todos os arquivos do sistema, renovado uma vez por dia: 
+                            é bem mais eficiente que o find)
+                        </p>
+                        <br>     
+                        <p> <span class="roxo font-weight-bold">grep</span> [texto] [nomedoarquivo] (procura por um texto dentro de um arquivo)</p>
+                        <br>      
+                        <p> <span class="roxo font-weight-bold">sed s/</span>[textoantigo]<span class="roxo font-weight-bold">/</span>[novotexto]<span class="roxo font-weight-bold">/g</span> [nomedoarquivo] (faz uma varredura no arquivo e troca todas as ocorrências do [textoantigo] por [novotexto])</p>
+                        <br>
+                        <br>
+                        <br>
+                        <p>Permissões para arquivos e diretórios</p>
+                        <br>
+                        <p>
+                            Existem três tipos de permissões para arquivos: <span class="roxo font-weight-bold">ler</span>, <span class="roxo font-weight-bold">escrever</span> e <span class="roxo font-weight-bold">executar</span>. Além disso, você pode definir permissões em três níveis: 
+                            para o dono do arquivo, para o grupo de usuários e para todo mundo. O comando chmod seguido por três números é usado para mudar as permissões. 
+                            O primeiro é a permissão para o dono, o segundo para o grupo e o terceiro para todos. Veja a seguir como os níveis de permissão são representados:
+                        </p>
+                        <br>     
+                        <p>0 = sem permissão</p>
+                        <p>1 = somente executar</p>
+                        <p>2 = somente escrever</p>
+                        <p>3 = escrever e executar</p>
+                        <p>4 = somente leitura</p>
+                        <p>5 = leitura e executar</p>
+                        <p>6 = ler e escrever</p>
+                        <p>7 = ler, escrever e executar</p>
+                        <br>      
+                        <br>         
+                        <br>   
+                        <p><span class="roxo font-weight-bold">Permissões de arquivos mais usadas:</span></p>
+                        <br>
+                        <p><span class="roxo font-weight-bold">chmod 604</span> [arquivo] (permissão mínima para arquivos HTML www)</p>
+                        <p><span class="roxo font-weight-bold">chmod 705</span> [nomedodiretório] (permissão mínima para diretórios www)</p>
+                        <p><span class="roxo font-weight-bold">chmod 755</span> [arquivo] (permissão mínima para scripts & programas www)</p>
+                        <p><span class="roxo font-weight-bold">chmod 606</span> [arquivo] (permissão para arquivos de dados usados por scripts)</p>
+                        <p><span class="roxo font-weight-bold">chmod 703</span> [nomedodiretório] (permissão somente para escrita para FTP público para carregar arquivos)</p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>      
     </div>
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+    <br>   
+    <br>
+    <p class="text-center" style="color: #bdbdbd">© 2019 Leonardo Muniz</p>    
+    <script src="js/jquery.js" ></script>
+    <script src="js/poper.js"></script>
+    <script src="js/bootstrap.js" ></script>  
 </body>
-
 </html>
